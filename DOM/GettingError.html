@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS Document.body Demo</title>
+    <script>
+    alert("From HEAD: " + document.body); // Outputs: null (since <body> is not parsed yet)
+    </script>
+</head>
+<body>
+    <script>
+    alert("From BODY: " + document.body); // Outputs: HTMLBodyElement
+    </script>
+</body>
+</html>

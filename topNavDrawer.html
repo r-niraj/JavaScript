@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Nav</title>
+   
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav{
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .rightNav{
+        text-align: right;
+    }
+    ul li{
+        display: inline-block;
+        margin: 20px;
+        list-style: none;
+    }
+        
+    span{
+        margin-right:10px;
+        font-size: 28px;
+        cursor: pointer;
+        display: none;
+    }
+
+    @media only screen and (max-width:700px){
+        ul{
+        display: none;
+        }
+        span{
+            display:block;
+        }
+        ul li{
+            display:block;
+        }
+    }
+    /* .nav img{
+        height: 80px;
+        width: 200px;
+        float: left;
+    } */
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <!-- <img src="../Images/logo.png" alt=""> -->
+        <div class="rightNav">
+            <span onClick="myFunction()">&#9776;</span>
+            <ul id="menu">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contacts</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function myFunction(){
+            var x= document.getElementById("menu");
+            if(x.style.display == "block"){
+                x.style.display ="none";
+            }
+            else{
+                x.style.display="block";
+            }
+        }
+    </script>
+</body>
+</html>

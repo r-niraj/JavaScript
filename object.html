@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>
+       
+        var a = {
+            fname: 'Rajnish',
+            lname: 'Niraj',
+            contact: 123456,
+            email: 'rajnish@gmail.com',
+            
+            Names: ["Monu", "Amit", "Rohan", "Kamla"],
+            
+            salary: function () {
+                return 25000;
+            },   
+            fullname: function () {
+                return this.fname + " " + this.lname;
+            },
+            living: {
+                'city': 'Delhi',
+                'country': 'India'
+            },
+        }
+        console.log(a);
+        document.write(a.fname + "<br>");
+        document.write(a.contact + "<br>");
+        document.write(a.email);
+        document.write(a.Names[0]);
+        document.write(a.Names[1]);
+        document.write(a.Names[2]);
+        document.write(a.salary() + "<br>");
+        document.write(a.fullname() + "<br>");
+        document.write(a.living.city + "<br>");
+
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

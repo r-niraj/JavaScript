@@ -1,0 +1,80 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: gainsboro;
+}
+#wrapper{
+    border: 0px solid black;
+    width: 1000px;
+    margin: 0 auto;
+}
+#header{
+    background-color: crimson;
+    height: 100px;
+    color: white;
+    margin-top: 0;
+}
+/* .xyz{
+    background-color: red;
+} */
+
+
+/* .abc{
+    background-color: greenyellow;
+} */
+
+#header h1{
+    padding:30px 0 0 20px;
+}
+#menu{
+    background-color: chocolate;
+}
+
+#menu li{
+    display: inline-block;
+}
+#menu li a{
+    display: block;
+    padding: 10px 13px;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+#menu li a:hover{
+    background-color: crimson;
+    color:white;
+}
+#content{
+    width: 800px;
+    float: left;
+    min-height: 500px;
+    box-sizing: border-box;
+    background-color: lime;
+    padding:10px;
+}
+#sidebar{
+    background-color: lightblue;
+    width:200px;
+    min-height: 500px;
+    float: right;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+#sidebar li{
+    padding-left:10px;
+}
+
+#sidebar a{
+    text-decoration: none;
+    color:black;
+}
+
+#footer{
+    background-color:chocolate;
+    clear: both;
+    text-align: center;
+    padding:5px 10px;
+}

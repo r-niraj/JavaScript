@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript</title>
+  <script>
+
+    //find() Method
+    var ages = [10, 23, 19, 20];
+	document.write(ages + "<br>");
+	
+	var b = ages.find(CheckAge);
+	document.write(b + "<br>");
+
+	// function CheckAge(age) {
+	// 	return age >= 18;
+	// }
+
+    //findIndex() Method
+
+    var b = ages.findIndex(CheckAge);
+	document.write(b + "<br>");
+
+	function CheckAge(age) {
+			return age >= 18;
+		}
+  </script>
+</head>
+<body>
+</body>
+</html>

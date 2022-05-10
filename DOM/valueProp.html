@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        #demoo {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>The value property returns the value of an attribute:</p>
+
+    <p id="demo" name='paragraph'>Hello</p>
+
+    
+    <h1>My First Web Page</h1>
+    <p>Exciting stuff! This is my first web page.</p>
+    <button id="color">Change color!</button>
+
+
+    <script>
+        const element = document.getElementById("demo");
+        let value = element.attributes[0].value;
+        // let value = element.attributes[0].value='demoo';
+        document.getElementById("demo").innerHTML = value;
+
+        // Another Example
+
+        document.getElementById('color').onclick = changeColor;
+        var currentColor = "red";
+        function changeColor() {
+            if (currentColor == "red") {
+                document.body.style.color = "green";
+                currentColor = "green";
+            } else {
+                document.body.style.color = "red";
+                currentColor = "red";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

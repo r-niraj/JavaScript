@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript</title>
+  <script>
+    var ages = [10, 50, 12, 19, 20];
+	document.write(ages + "<br><br>");
+
+	var b = ages.filter(CheckAge);
+	document.write(b + "<br>");
+
+	function CheckAge(age) {
+		return age >= 18;
+	}
+  </script>
+</head>
+<body>
+</body>
+</html>

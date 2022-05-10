@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript</title>
+  <script>
+    var numbers = [10, 13, 18, 2];
+    document.write(numbers + "<br>");
+
+    var b = numbers.some(checkNumbers);
+    document.write(b + "<br>");
+
+    //some
+    function checkNumbers(num){
+        return num>=10;
+    }
+
+    //every
+
+    var b = numbers.every(checkNumbers);
+    document.write(b + "<br>");
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

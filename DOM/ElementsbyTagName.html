@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS Select Elements by Tag Name</title>
+</head>
+<body>
+    <p>This is a paragraph of text.</p>
+    <div class="test">This is another paragraph of text.</div>
+    <p>This is one more paragraph of text.</p>   
+ 
+    <script>
+    // Selecting all paragraph elements
+    var matches = document.getElementsByTagName("p");
+    console.log(matches);
+    // Printing the number of selected paragraphs
+    document.write("Number of selected elements: " + matches.length);
+     
+    // // Highlighting each paragraph's background through loop
+    for(var elem in matches) {  
+        matches[elem].style.background = "yellow";
+    }
+    </script>
+</body>
+</html>

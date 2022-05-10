@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <!-- The querySelector() is a method of the Element interface.
+    The querySelector() method allows you to select the first
+    element that matches one or more CSS selectors. -->
+
+    <meta charset="UTF-8">
+    <title> class="colors">Colors</title>
+</head>
+
+<body>
+    <h1> JavaScript Query Selector</h1>
+    <h1 class="myClass">Class 1</h1>
+    <p class="myClass"> Myclass</p>
+    <div id="firstid">
+        <p> It is the div p paragraph</p>
+        <p class="pclass"> div p class</p>
+    </div>
+    <p id="myid"> It is p id</p>
+    <div id="divid"> It is div id</div>
+    <script>
+        //Element selector  
+        var e = document.querySelectorAll(".myClass");
+        console.log(e);   
+    </script>
+</body>
+
+</html>
