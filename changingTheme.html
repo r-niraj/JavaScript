@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            margin: 0 auto;
+        }
+
+        #switch input {
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: grey;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            background-color: white;
+            bottom: 4px;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background-color: #1583ea;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label id="switch">
+            <input type="checkbox" checked>
+            <span id="slider" class="slider"></span>
+        </label>
+    </div>
+
+    <script>
+        function start() {
+            var toggleSwitch = document.getElementById("slider");
+            toggleSwitch.addEventListener("click", toggle);
+        };
+
+        function toggle() {
+            var backColor = document.body.style.backgroundColor;
+            document.body.style.backgroundColor = (backColor === "black") ? "white" : "black";
+        };
+
+
+        start();
+    </script>
+</body>
+
+</html>
