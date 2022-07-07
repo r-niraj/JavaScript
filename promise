@@ -1,0 +1,98 @@
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        // <<<<<<<<<<<<<<< JSON DATA FETCHING >>>>>>>>>>>
+
+        let Func = () => {
+            return new Promise(function (resolve, reject) {
+                console.log("Fetching data, Please wait..");
+                setTimeout(() => {
+                    $.get('https://jsonplaceholder.typicode.com/posts', (data)=>{
+                        resolve(data);
+                    }).fail(()=>{
+                        reject("Failed to load data");
+                    })
+                }, 4000);
+            });
+        }
+
+        // Func();
+        Func().then((result)=>{console.log(result)}).catch((error)=>{console.log(error)});
+
+        //    <<<<<<<<<< CALCULATION >>>>>>>>>>
+
+        // let Func = (a,b) => {
+        //     return new Promise(function (resolve, reject) {
+        //         console.log("Fatching data, Please wait..");
+        //         let c = a/b;
+        //         setTimeout(() => {
+        //             if (a,b) {
+        //                 // resolve("Your promise has been resolved");
+        //                 resolve("Answer is: "+c);
+        //             } else {
+        //                 // reject("Promise failed");
+        //                 reject("Failed to calculate");
+        //             }
+        //         }, 4000);
+        //     });
+        // }
+
+
+        // Func(5,0).then((result) => {
+        //     console.log(result);
+        // }).catch((error) => {
+        //     console.log(error);
+        // });
+
+
+        // <<<<<<<<<< EXAMPLE 1 >>>>>>>>>>>
+
+        // let result= false;
+        // let prom = new Promise(function(resolve,reject){
+        //     if(result){
+        //         resolve("Your promise has been resolved");
+        //     }else{
+        //         reject("Promise failed");
+        //     }
+        // });
+
+
+        // prom.then(onFullfillment).catch(onRejection);
+
+        // function onFullfillment(result){
+        //     console.log(result);
+        // }
+
+        // function onRejection(error){
+        //     console.log(error);
+        // }
+
+
+        // <<<<<<<<<< EXAMPLE 2 >>>>>>>>>>>
+
+
+        // let myFunc = (x) => {
+        //     return new Promise(function (resolve, reject) {
+        //         if (x) {
+        //             resolve("Your promise has been resolved");
+        //         } else {
+        //             reject("Promise failed");
+        //         }
+        //     });
+        // }
+
+
+        // function onFullfillment(result) {
+        //     console.log(result);
+        // }
+
+        // function onRejection(error) {
+        //     console.log(error);
+        // }
+
+        // myFunc(true).then(onFullfillment).catch(onRejection);
+
+    </script>
+</head>
