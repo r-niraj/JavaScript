@@ -1,0 +1,56 @@
+<head>
+    <script>
+        // function sum(name, ...args) {
+        //     console.log(arguments);
+
+        //     document.write(`Hello ${name} : `);
+
+        //     let sum = 0;
+        //     for (let i in args) {
+        //         sum += args[i];
+        //     }
+
+        //     document.write(sum);
+        // }
+
+        // var arr = [20, 30, 40];
+        // sum("Amit Kumar", ...arr);
+
+        
+        // Array assignment concept using spread operator
+
+        // var arr1 = [10,20,30,40];
+        // // var arr2 = arr1;
+        // var arr2 = [...arr1];
+
+        // arr1.push(50);
+        // console.log('Array 1: ' + arr1);
+        // console.log('Array 2: ' +arr2);
+
+
+
+        // Array concatination concept using spread operator
+
+        var arr1 = [10, 20, 30, 40];
+        var arr2 = [50, 60];
+        var arr3 = [95, ...arr1, ...arr2];
+
+        console.log(arr3);
+
+
+        // Spread Operator with Objects
+
+        var obj1 = {
+            name: "Amit Kumar",
+            course: "B.Tech"
+        }
+
+        var obj2 = {
+            age: 25
+        }
+
+        var obj3 = { ...obj1, ...obj2 };
+
+        console.log(obj3);
+    </script>
+</head>

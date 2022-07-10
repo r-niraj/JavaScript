@@ -1,0 +1,66 @@
+<head>
+    <script>
+        // FIRST EXAMPLE
+        // class hello {
+
+        //     message() {
+        //         console.log("Hello Everyone");
+        //     }
+
+        //     sorry(){
+        //         console.log('Sorry everyone');
+        //     }
+        // }
+
+        // let a = new hello();
+        // console.log(typeof a);
+        // a.message();
+
+
+        //Constructor function in class
+        // class student {
+        //     constructor() {
+        //         console.log("Constructor Function")
+        //     }
+        // }
+
+        // let a = new student();
+        // let b = new student();
+
+
+        // Initilize Property with constructor
+        class student {
+            //Constructor
+            constructor(name, age) {
+                // let name;
+                this.studentName = name;
+                this.studentage = age;
+                console.log('Constructor function');
+            }
+
+            // Prototype
+            hello() {
+                console.log(`Welcome ${this.studentName} you have become ${this.studentage}`);
+            }
+
+            // Static
+            static staticMethod() {
+                console.log("Static Method");
+            }
+        }
+
+        // let a = new student()
+        // a.name = "Amit Kumar";
+        // a.hello();
+
+        let a = new student("Amit Kumar", 25);
+        let b = new student("Rohan Das", 30);
+
+        a.hello();
+        b.hello();
+
+        student.staticMethod();
+
+
+    </script>
+</head>
