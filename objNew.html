@@ -1,20 +1,39 @@
-<!DOCTYPE html>
-<html>
 <head>
-  <title>JavaScript</title>
-  <script>
-    var person = new Object();
+    <script>
+        // let obj = new Object;
 
-	person.firstname = 'Amit';
-	person.lastname = 'Verma';
-	person.age = 35;
+        // obj.name = "Amit";
+        // obj.age = 25;
 
-	// console.log(person);
-	document.write(person.firstname + "<br>");
-	document.write(person.lastname + "<br>");
-	document.write(person['age'] + "<br>");
-  </script>
+        // console.log(obj);
+
+
+        // let details = {
+        //     name: "Amit",
+        //     age: 25
+        // }
+
+        // let newObj = details;
+        
+        // newObj.name = "Sumit";
+        
+        // console.log(details);
+        // console.log(newObj);
+
+
+        let target = {a:1, b:2};
+        let source = {};
+
+        let returnedValue= Object.assign(target, source);
+
+        target=source;
+        source.a = 92;
+        
+        console.log(target);
+        console.log(returnedValue);
+
+
+        </script>
+
 </head>
-<body>
-</body>
-</html>
+</head>
