@@ -1,0 +1,21 @@
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script> 
+</head>
+
+<body>
+    
+    <script>
+        let func = ()=>{
+            return new Promise(function(resolve,reject){
+                console.log('Fetching data, Please wait..');
+                setTimeout(()=>{
+                    $.get('https://jsonplaceholder.typicode.com/posts', (data)=>{
+                        resolve(data);
+                    }).fail(()=>{
+                        reject("Failed to load data");
+                    })
+                },4000);
+            })
+        }
+
+        func().then((result)=>{console.log(result)}).catch((error)=>{console.log(error)});
